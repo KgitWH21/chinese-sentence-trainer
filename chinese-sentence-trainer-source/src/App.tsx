@@ -1,5 +1,3 @@
-"use client";
-
 import { useMemo, useState } from "react";
 import { ConstraintCard } from "./components/ConstraintCard";
 import { EvaluationPanel } from "./components/EvaluationPanel";
@@ -39,7 +37,7 @@ function chooseChengyu(mode: VocabularyMode, level: Level) {
 const normalReveals: RevealState = { pinyin: true, meaning: true, collocations: false, model: false };
 const hiddenReveals: RevealState = { pinyin: false, meaning: false, collocations: false, model: false };
 
-export default function Home() {
+export default function App() {
   const [level, setLevel] = useState<Level>("beginner");
   const [register, setRegister] = useState<Register>("conversation");
   const [script, setScript] = useState<Script>("simplified");

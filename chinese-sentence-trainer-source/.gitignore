@@ -2,20 +2,13 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+
+# build output
+/dist/
+*.tsbuildinfo
 
 # testing
 /coverage
-
-# next.js
-/.next/
-/out/
 
 # misc
 .DS_Store
@@ -32,11 +25,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-# typescript
-next-env.d.ts
-/dist/
-/.wrangler/
-/.sites-runtime/
-/outputs/
-/work/

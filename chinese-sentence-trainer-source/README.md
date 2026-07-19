@@ -15,16 +15,16 @@ Open the local address printed in the terminal.
 
 ## Main files
 
-- `app/page.tsx` coordinates application state and challenge generation.
-- `app/components/` contains the trainer controls, cards, recall UI, and feedback panels.
-- `app/data/content.ts` contains the level-based prompt collections.
-- `app/data/chengyu.ts` contains the annotated Chengyu catalog.
-- `app/data/registers.ts` contains register guidance.
-- `app/lib/validation.ts` contains the non-AI sentence checker.
-- `app/lib/chinese.ts` handles simplified/traditional conversion.
-- `app/lib/types.ts` defines the shared data model.
-- `app/globals.css` contains the full responsive visual design.
-- `app/layout.tsx` contains page metadata and the document shell.
+- `src/App.tsx` coordinates application state and challenge generation.
+- `src/components/` contains the trainer controls, cards, recall UI, and feedback panels.
+- `src/data/content.ts` contains the level-based prompt collections.
+- `src/data/chengyu.ts` contains the annotated Chengyu catalog.
+- `src/data/registers.ts` contains register guidance.
+- `src/lib/validation.ts` contains the non-AI sentence checker.
+- `src/lib/chinese.ts` handles simplified/traditional conversion.
+- `src/lib/types.ts` defines the shared data model.
+- `src/index.css` contains the full responsive visual design.
+- `src/main.tsx` mounts the app; `index.html` is the Vite entry point.
 
 The trainer has no database, AI, or external runtime API dependency. Exercises are stored as typed local data, making it straightforward to add vocabulary, constructions, registers, or Chengyu.
 
@@ -49,7 +49,17 @@ If the folder is already a Git repository, skip `git init` and replace the exist
 npm run build
 ```
 
-This codebase uses React, TypeScript, Tailwind CSS, Vite, and Vinext. It is configured for the ChatGPT Sites/Cloudflare runtime. If you want to deploy through a different host, you may need to adapt the Vinext/Cloudflare build configuration to that host.
+Output is a static site in `dist/`. Preview it locally with `npm run preview`.
+
+## Deploy to Vercel
+
+This is a standard Vite + React + TypeScript static site.
+
+- Framework preset: **Vite**
+- Build command: `npm run build`
+- Output directory: `dist`
+
+No environment variables, database, or server runtime are required.
 
 ## Content note
 
