@@ -159,7 +159,7 @@ export default function App() {
     </header>
 
     <section id="top" className="hero">
-      <div className="hero-copy"><p className="eyebrow">DAILY CONSTRUCTION PRACTICE · {displayChinese("每日造句", script)}</p><h1>Build one sentence.<br/><em>Learn how Chinese thinks.</em></h1><p>Draw a starter, a grammar construction, an ending, and a word. There are countless right answers—the constraint is the teacher.</p></div>
+      <div className="hero-copy"><p className="eyebrow">DAILY CONSTRUCTION PRACTICE · {displayChinese("每日造句", script)}</p><h1>Build one sentence.<br/><em>Write great Chinese.</em></h1><p>Draw a starter, a grammar construction, an ending, and a word. There are countless right answers—the constraint is the teacher.</p></div>
       <TrainerControls level={level} register={register} script={script} onLevel={changeLevel} onRegister={changeRegister} />
     </section>
 
